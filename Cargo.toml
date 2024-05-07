@@ -1,11 +1,20 @@
-[package]
+[workspace]
+members = [
+    "dep-check",
+    "dep-run",
+]
+
+default-members = ["dep-check"]
+resolver = "2"
+
+[workspacepackage]
 name = "dep-check"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
+[workspace.dependencies]
 # 如果这里的 trait-lib 配置和 middle-lib 的不一致
 # 编译会出现 perhaps two different versions of crate `trait_lib` are being used 报错
 # 参数是否存在出入，可以通过 Cargo.lock 里的 source url 确认。
@@ -13,4 +22,4 @@ trait-lib = { git = "https://github.com/liyan-ah/trait-lib.git", tag = "1.0.0" }
 # 在没有其他参数的情况下，这里会使用目标仓库里的默认分支上的最新代码。
 # 拉取的结果和 git clone 的分支结果是一致的。在 Cargo.lock 生成后，再修改目标仓库里的默认分支是无效的，需要先删除 Cargo.lock 的
 # 配置，重新拉取。
-middle-lib = { git = "https://github.com/liyan-ah/middle-lib.git" } 
+middle-lib = { git = "https://github.com/liyan-ah/middle-lib.git" }

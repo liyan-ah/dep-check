@@ -11,6 +11,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "dep-run"
+version = "0.1.0"
+
+[[package]]
 name = "middle-lib"
 version = "0.1.0"
 source = "git+https://github.com/liyan-ah/middle-lib.git#c3ea68a25fc3d201107a5dac06df3dec04f58a3b"
