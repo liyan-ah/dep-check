@@ -17,7 +17,7 @@ version = "0.1.0"
 [[package]]
 name = "middle-lib"
 version = "0.1.0"
-source = "git+https://github.com/liyan-ah/middle-lib.git#c3ea68a25fc3d201107a5dac06df3dec04f58a3b"
+source = "git+https://github.com/liyan-ah/middle-lib.git#e51e7a05e40f2f8d48305b50d9ea52996ef79ae2"
 dependencies = [
  "trait-lib",
 ]
@@ -25,4 +25,4 @@ dependencies = [
 [[package]]
 name = "trait-lib"
 version = "0.1.0"
-source = "git+https://github.com/liyan-ah/trait-lib.git?tag=1.0.0#e235c1997d09288d62c10c71e81028d4ef37d18d"
+source = "git+https://github.com/liyan-ah/trait-lib.git?tag=1.1.0#0e5e74af643e5c3590a4a6baad3c7f857573686d"
